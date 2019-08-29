@@ -1,0 +1,103 @@
+.txt_clr_pri {
+	color: rgb(5, 71, 82);
+}
+#navbar {
+	width: 100%;
+	font-size: 15px;
+}
+.login {
+	margin-right: 20px;
+	transition: font-size 0.5s;
+	text-decoration: none;
+}
+.signup {
+	transition: font-size 0.5s;
+	margin-right: 15px;
+}
+.find_ride {
+	margin-right: 20px;
+	transition: font-size 0.5s;
+	text-decoration: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#carpoolvid {
+	width: 100%;
+	z-index: -1;
+	margin-top: -190px;
+	margin-bottom: -205px;
+}
+#vid_content {
+	height: 200px;
+	padding: 30px 0px;
+	color: white;
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+}
+#find_ride {
+	width: 100%;
+	padding: 40px 0px;
+}
+#driver_img {
+	width: 100%;
+	border-radius: 5px;
+}
+#find_ride_btn {
+	width: 120px;
+	border-radius: 50px;
+	background: #5dd167;
+	padding: 15px;
+	color: white;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#wrapper {
+	padding: 30px 0px;
+	background: #5dd167 !important;
+}
+#wrapper_btn {
+	width: 100%;
+	margin: 10px 0px;
+	padding: 30px 10px;
+}
+#wr_btn_txt {
+	padding: 25px 20px;
+	background: white;
+	border-radius: 5px;
+}
+#wr_btn_txt:hover {
+	background: #ddd;
+}
+#wr_btn_price {
+	float: right;
+	margin-right: 10px;
+	color: green;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 992px) {
+	#carpoolvid {
+		margin: 0px;
+		/* position: absolute; */
+	}
+	#vid_content {
+		background: white;
+		position: static;
+	}
+	#banner {
+		color: rgb(5, 71, 82);
+	}
+	#desc {
+		color: #ddd;
+	}
+	#brief {
+		text-align: center;
+	}
+	
+}

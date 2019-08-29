@@ -1,0 +1,12 @@
+#body {
+	background: linear-gradient(#f8f9fa, #8e9eab);
+	justify-content:center;
+	display: flex;
+	padding-top: 100px;
+	height: 100vh;
+}
+#login_form {
+	height: 440px;
+	background: white;
+	padding: 50px;
+}
