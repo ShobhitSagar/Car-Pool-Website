@@ -3,17 +3,16 @@ package com.dao;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.models.Admin;
-import com.models.Customer;
-import com.models.Driver;
+import com.models.Find;
+import com.models.Offer;
+import com.models.User;
 
 public interface DAO {
-	public String addCustomer(Customer customer) throws SQLException;
-	public String addDriver(Driver driver) throws SQLException;
-	public String UpdateCustomer(Customer customer) throws SQLException;
-	public String deleteCustomer(Customer customer) throws SQLException;
-	public List<Customer> getAllCustomer() throws SQLException;
-	public List<Driver> getAllDriver() throws SQLException;
-	public List<Admin> getAllAdmin() throws SQLException;
+	public String addUser(User user) throws SQLException;
+	public String updateUser(User user) throws SQLException;
+	public String deleteUser(User user) throws SQLException;
+	public List<User> getAllUser() throws SQLException;
 	public List<String> getAllLocations() throws SQLException;
+	public String offerRide(Offer offer) throws SQLException;
+	public List findRide(Find find) throws SQLException;
 }

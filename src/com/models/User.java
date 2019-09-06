@@ -1,12 +1,20 @@
 package com.models;
 
-public class Driver {
-	 private String  uname,email,password,licence;
-	 private int contact;
-
-	 public Driver() {
-		 super();
+public class User {
+	 private String  uname,email,password;
+	 private int contact, id;
+	 
+	 public User() {
+		 
 	 }
+
+	public User(String  uname,String email, String password, int contact) {
+		super();
+		this.uname = uname;
+		this.email = email;
+		this.password = password;
+		this.contact = contact;
+	}
 
 	public String getUname() {
 		return uname;
@@ -32,14 +40,6 @@ public class Driver {
 		this.password = password;
 	}
 
-	public String getLicence() {
-		return licence;
-	}
-
-	public void setLicence(String licence) {
-		this.licence = licence;
-	}
-
 	public int getContact() {
 		return contact;
 	}
@@ -47,7 +47,13 @@ public class Driver {
 	public void setContact(int contact) {
 		this.contact = contact;
 	}
-	 
-	 
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 }

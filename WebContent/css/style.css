@@ -7,17 +7,15 @@
 }
 .login {
 	margin-right: 20px;
-	transition: font-size 0.5s;
-	text-decoration: none;
 }
 .signup {
-	transition: font-size 0.5s;
 	margin-right: 15px;
 }
 .find_ride {
 	margin-right: 20px;
-	transition: font-size 0.5s;
-	text-decoration: none;
+}
+.offer_ride{
+	margin-right: 20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

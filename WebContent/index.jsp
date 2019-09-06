@@ -22,37 +22,30 @@
 			style="margin-top: 10%;">
 			<h2 class="align-middle" style="color: rgb(5, 71, 82);">Driving in your car soon?</h2>
 			<p>Let's make this your least expensive journey ever.</p>
-			<a class="btn btn-primary" href="findride.jsp" role="button">Offer a ride</a>
+			<a class="btn btn-primary" href="signup.jsp" role="button">Offer a ride</a>
 		</div>
 	</div>
 </div>
 
 <div id="wrapper">
 	<div class="container">
-		<h2 style="color: white;" data-aos="fade-down">Where do you want
-			to go?</h2>
+		<h2 style="color: white;" data-aos="fade-down">Where do you want to go?</h2>
 		<div class="row">
 			<div class="col-sm-12 col-lg-4" data-aos="flip-left">
-				<a id="wrapper_btn" class="btn btn-light" href="#" role="button">Delhi
-					> Chandigarh
-					<div id="wr_btn_price">
-						Rs.500 <i class="fa fa-arrow-circle-right fa-lg"></i>
+				<a id="wrapper_btn" class="btn btn-light" href="#" role="button">Delhi > Chandigarh
+					<div id="wr_btn_price"> Rs.500 <i class="fa fa-arrow-circle-right fa-lg"></i>
 					</div>
 				</a>
 			</div>
 			<div class="col-sm-12 col-lg-4" data-aos="flip-up">
-				<a id="wrapper_btn" class="btn btn-light" href="#" role="button">Mumbai
-					> Pune
-					<div id="wr_btn_price">
-						Rs.300 <i class="fa fa-arrow-circle-right fa-lg"></i>
+				<a id="wrapper_btn" class="btn btn-light" href="#" role="button">Mumbai > Pune
+					<div id="wr_btn_price"> Rs.300 <i class="fa fa-arrow-circle-right fa-lg"></i>
 					</div>
 				</a>
 			</div>
 			<div class="col-sm-12 col-lg-4" data-aos="flip-right">
-				<a id="wrapper_btn" class="btn btn-light" href="#" role="button">Bengaluru
-					> Chennai
-					<div id="wr_btn_price">
-						Rs.600 <i class="fa fa-arrow-circle-right fa-lg"></i>
+				<a id="wrapper_btn" class="btn btn-light" href="#" role="button">Bengaluru > Chennai
+					<div id="wr_btn_price"> Rs.600 <i class="fa fa-arrow-circle-right fa-lg"></i>
 					</div>
 				</a>
 			</div>

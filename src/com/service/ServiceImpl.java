@@ -5,30 +5,18 @@ import java.util.List;
 
 import com.dao.DAO;
 import com.dao.DAOImpl;
-import com.models.Admin;
-import com.models.Customer;
-import com.models.Driver;
+import com.models.Find;
+import com.models.Offer;
+import com.models.User;
 
 public class ServiceImpl implements Service{
 	DAO dao=new DAOImpl();
 	
 	@Override
-	public String addCustomer(Customer customer) {
+	public String addUser(User user) {
 		String result=null;
 		try {
-			result=dao.addCustomer(customer);
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-		}
-		return result;
-	}
-	
-	@Override
-	public String addDriver(Driver driver) {
-		String result=null;
-		try {
-			result=dao.addDriver(driver);
+			result=dao.addUser(user);
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -37,28 +25,10 @@ public class ServiceImpl implements Service{
 	}
 
 	@Override
-	public String UpdateCustomer(Customer customer) {
+	public String UpdateUser(User user) {
 		String result=null;
 		try {
-			result=dao.UpdateCustomer(customer);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return result;
-	}
-	
-	/* public boolean UpdateCustomer(Customer c) throws Exception
-	 * {
-	 * 		boolean flag=dao.UpdateCustomer(customer);
-	 * 		return flag;
-	 * }
-	 */
-
-	@Override
-	public String deleteCustomer(Customer customer) {
-		String result=null;
-		try {
-			result=dao.deleteCustomer(customer);
+			result=dao.updateUser(user);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -66,43 +36,54 @@ public class ServiceImpl implements Service{
 	}
 
 	@Override
-	public List<Customer> getAllCustomer() {
-		List<Customer> list=null;
+	public String deleteUser(User user) {
+		String result=null;
 		try {
-			list=dao.getAllCustomer();
+			result=dao.deleteUser(user);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return list;
+		return result;
 	}
 
 	@Override
-	public List<Driver> getAllDriver() {
-		List<Driver> list=null;
+	public List<User> getAllUser() {
+		List<User> list=null;
 		try {
-			list=dao.getAllDriver();
+			list=dao.getAllUser();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return list;
 	}
-
-	@Override
-	public List<Admin> getAllAdmin() {
-		List<Admin> list=null;
-		try {
-			list=dao.getAllAdmin();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return list;
-	}
-
 	@Override
 	public List<String> getAllLocations() {
 		List<String> list=null;
 		try {
 			list=dao.getAllLocations();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	@Override
+	public String offerRide(Offer offer) throws SQLException {
+		String result=null;
+		try {
+			result=dao.offerRide(offer);
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	@Override
+	public List findRide(Find find) throws SQLException {
+		List<User> list=null;
+		try {
+			list=dao.findRide(find);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

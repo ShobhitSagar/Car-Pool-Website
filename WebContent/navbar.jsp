@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/findride.css">
+    <link rel="stylesheet" href="css/offerride.css">
     <!--  --> <!--  -->
     <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
 </head>
@@ -22,16 +24,18 @@
             <a class="navbar-brand animated tada" href="http://localhost:8080/Car_Pool_Project/index.jsp">Car Pooling</a>
         
             <div data-aos="fade-in" class="ml-auto" id="">
-                <a class="find_ride" href="findride.jsp"><i class="fa fa-search fa-lg" style="margin-right: 10px"></i>Find a ride</a>
+                <a class="find_ride" href="findride.jsp"><i class="fa fa-search fa-lg" style="margin-right: 6px"></i>Find a ride</a>
                 <% 
                 HttpSession session2 = request.getSession(false);
                 String name = (String) session2.getAttribute("name");
                 if (name!=null) { %>
+                <a class="offer_ride" href="offerride.jsp"><i class="fa fa-plus-circle fa-lg" style="margin-right: 6px"></i>Offer a ride</a>
                 <a> <%=request.getAttribute("name") %> </a>
                 <form action="CarServlet" method="post">
                 <input type="submit" name="action" value="logout"></input>
                 </form>
                 <% } else { %>
+                <a class="offer_ride" href="login.jsp"><i class="fa fa-plus-circle fa-lg" style="margin-right: 6px"></i>Offer a ride</a>
                 <a class="login" href="login.jsp">Log In</a>
                 <a  class="signup" href="signup.jsp">Sign Up</a>
                 <% } %>

@@ -1,18 +1,18 @@
 package com.service;
 
+import java.sql.SQLException;
 import java.util.List;
 
-import com.models.Admin;
-import com.models.Customer;
-import com.models.Driver;
+import com.models.Find;
+import com.models.Offer;
+import com.models.User;
 
 public interface Service {
-	public String addCustomer(Customer customer);
-	public String addDriver(Driver driver);
-	public String UpdateCustomer(Customer customer);
-	public String deleteCustomer(Customer customer);
-	public List<Customer> getAllCustomer();
-	public List<Driver> getAllDriver();
-	public List<Admin> getAllAdmin();
+	public String addUser(User user);
+	public String UpdateUser(User user);
+	public String deleteUser(User user);
+	public List<User> getAllUser();
 	public List<String> getAllLocations();
+	public String offerRide(Offer offer) throws SQLException;
+	public List findRide(Find find) throws SQLException;
 }

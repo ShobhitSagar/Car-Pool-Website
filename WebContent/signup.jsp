@@ -3,14 +3,15 @@
 <div id="body">
 	<form id="signup_form" method="post" class="border" name="form" action="CarServlet?action=register">
 		<h1 class="text-center txt_clr_pri">Sign Up</h1>
+            <div class="dropdown-divider" style="margin: 10px -50px 20px -50px;"></div>
 		<div class="form-row">
 			<div class="form-group col-md-6">
-				<label for="inputEmail4">Email</label> <input type="email"
-					class="form-control" id="inputEmail4" name="email" placeholder="Email">
+				<label for="inputEmail4">Email</label>
+				<input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
 			</div>
 			<div class="form-group col-md-6">
-				<label for="inputPassword4">Password</label> <input type="password"
-					class="form-control" id="inputPassword4" name="password" placeholder="Password">
+				<label for="inputPassword4">Password</label>
+				<input type="password" class="form-control" id="inputPassword4" name="password" placeholder="Password">
 			</div>
 		</div>
 		<div class="form-group">
@@ -20,8 +21,10 @@
 		<div class="form-group">
 			<label for="inputAddress2">Contact</label> <input type="number"
 				class="form-control" id="inputAddress2" name="contact"
-				placeholder="XXXXXXXXXX">
+				placeholder="0123456789">
 		</div>
+        <div class="dropdown-divider" style="margin: 10px -50px 20px -50px;"></div>
 		<button type="submit" class="btn btn-primary">Sign Up</button>
+		<a class="btn btn-outline-secondary" href="login.jsp" role="button">Log In</a>
 	</form>
 </div>
